@@ -1,28 +1,23 @@
 import { useState } from "react";
-
+import { AddCategory, GifGrid } from "./components";
 export const GifExpertApp = () => {
   //no poner condicionalmente los hooks
   const [categories, setCategories] = useState(["mr. robot", "rick and morty"]);
 
-  const handleAdd = (value) => {
-    setCategories([...categories]);
+  const onAddCategory = (onNewCategory) => {
+    if (categories.includes(onNewCategory)) return;
+    setCategories([onNewCategory, ...categories]);
+    // setCategories([...categories, value]);
   };
 
   return (
     <>
-      {/* Titulo */}
       <h1>GifExpertApp</h1>
       <hr />
-      {/* Input para la categoria */}
-      <input type="text" />
-      <button onClick={handleAdd}>Agregar</button>
-      {/* Listado de categorias */}
-      <ol>
-        {categories.map((category) => {
-          return <li key={category}>{category}</li>;
-        })}
-      </ol>
-      {/* Gif Item */}
+      <AddCategory onNewCategory={onAddCategory} />
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </>
   );
 };
