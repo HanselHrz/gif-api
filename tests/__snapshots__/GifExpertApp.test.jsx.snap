@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en el componente < GifExpertApp /> Debe de hacer match con el snapshot  1`] = `
+<div>
+  <h1>
+    GifExpertApp
+  </h1>
+  <hr />
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="Buscar GIF"
+      type="text"
+      value=""
+    />
+  </form>
+  <h3>
+    mr. robot
+  </h3>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+  <h3>
+    rick and morty
+  </h3>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
+
+exports[`pruebas en el componente < GifExpertApp /> should  1`] = `
+<div>
+  <h1>
+    GifExpertApp
+  </h1>
+  <hr />
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="Buscar GIF"
+      type="text"
+      value=""
+    />
+  </form>
+  <h3>
+    mr. robot
+  </h3>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+  <h3>
+    rick and morty
+  </h3>
+  <h2>
+    Loading...
+  </h2>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
